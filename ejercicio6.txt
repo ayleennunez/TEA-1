@@ -1,0 +1,11 @@
+from turtle import clear
+
+
+MAX_HORAS_SEMANALES = 40
+horas_extras = 0
+horas = input("Ingrese el numero de horas: ")
+tarifa = input("Ingrese tarifa por hora: ")
+horas_extras = int(horas) - MAX_HORAS_SEMANALES
+if(horas_extras > 0):
+ pago= (40 * int(tarifa)) + (horas_extras* (int(tarifa)*1.5))
+print(pago)
